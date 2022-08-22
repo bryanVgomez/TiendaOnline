@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -38,12 +38,12 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	        	<li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 	        	<li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
 	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -55,75 +55,69 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">EarthBorn Weigth Control</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span><span class="mr-2"><a href="team.html">Catalogo <i class="ion-ios-arrow-forward"></i></a></span> <span>EarthBorn Weigth Control<i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-2 bread">Realizar Pedido</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span><span class="mr-2"><a href="team.html">Catalogo <i class="ion-ios-arrow-forward"></i></a></span><span class="mr-2"><a href="team.html">EarthBorn Weigth Control <i class="ion-ios-arrow-forward"></i></a></span> <span>Realizar Pedido<i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
     </section>
-		
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2" style="background-image: url(images/weightControlSaco.jpg);">
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+			<div class="container-wrap">
+				<div class="row d-flex align-items-stretch no-gutters">
+					<div class="col-md-6 p-5 order-md-last">
+						<form id="form">
+                            <div class="form-group">
+                                <input  type="text" class="form-control"  name="alimento" id="resultado" readonly>
+                            </div>
+                            <div class="form-group">
+                                <select name="kilos">
+                                    <option value="2.5 Kilos" selected>2.5 Kilos</option>
+                                    <option value="12 Kilos" >12 Kilos</option>
+                                </select>
+                            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+              </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Apellido" name="last" required>
+                            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Telefono" name="phone" required>
+              </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Email" name="email" required>
+                          </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Direccion" name="address" required>
+                            </div>
+              <div class="form-group">
+                  <textarea id="" cols="30" rows="7" type="text" class="form-control" placeholder="Mensaje" name="message" required> </textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Confirmar Pedido" class="btn btn-primary py-3 px-5" id="button">
+              </div>
+            </form>
 					</div>
-					<div class="col-md-7 wrap-about pb-md-5 ftco-animate">
-	          <div class="heading-section mb-5 pl-md-5">
-	          	<div class="pl-md-5 ml-md-5">
-                    <p><a href="realizarPedido.html" class="btn btn-primary px-4 py-3 mt-3" onclick="nombreDeLaFuncion();">Realizar pedido</a></p>
-		          	<span class="subheading subheading-with-line"><small class="pr-2 bg-white">Descripcion</small></span>
-<script>
-    function nombreDeLaFuncion(){}
-    localStorage.setItem("Alimento", "EarthBornWeigthControl");
-</script>
-	            </div>
-	          </div>
-	          <div class="pl-md-5 ml-md-5 mb-5">
-							<p>Esta fórmula de gran sabor reduce las grasas y las calorías sin reducir los nutrientes necesarios para mantener una salud óptima. Una mezcla de verduras y frutas que incluyen guisantes, manzanas, arándanos, zanahorias y espinacas ayuda a su perro a sentirse lleno y satisfecho al tiempo que reduce la ingesta calórica.
+					<div class="col-md-6 d-flex align-items-stretch">
 
-                                Earthborn Holistic® es una alternativa avanzada en nutrición para perros y gatos. Combinamos la mejor calidad de ingredientes holísticos para nutrir a tu mascota, seleccionando las mejores proteínas, grasas y frutas vegetales, incluyendo complejos de vitaminas y minerales, para su soporte de energía, inmunidad, salud y bienestar. Cada uno de nuestros ingredientes tiene un único propósito y es cuidadosamente balanceado para proveer el mejor beneficio y nutrición.
-
-                                Las características de Earthborn Holistic Weight Control Grain Free son:
-
-                                Una mezcla de verduras y frutas que ayuda a su perro a sentirse lleno y satisfecho al tiempo que reduce la ingesta calórica.
-                                No hay colores artificiales, sabores o conservantes.
-                                El color varía naturalmente.</p>
-							<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-							<p><a href="#" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
-						</div>
 					</div>
-				</div>
-				<div class="row mt-5 pt-4">
-					<div class="col-md-4 ftco-animate">
-						<h3 class="h4">Ingredientes</h3>
-						<p>Harina de pollo, Guisantes, Tapioca, Fibra de Guisante, Tomates, grasa de pollo (conservado con tocoferoles mixtos), semillas de lino, sabores naturales, huevo, manzanas, arándanos, zanahorias, espinacas, fibra de arándanos, fibra de arándano, DL-metionina, L-lisina, taurina, clorhidrato de glucosamina, sulfato de condroitina, yuca, L-carnitina, beta caroteno, vitaminas, minerales, probióticos.
-
-                            Vitamina A ≥12.000 UI/kg, Vitamina D3 ≥750 UI/kg, Vitamina C ≥100 mg/kg, Vitamina E ≥250 UI/kg, Cobre (sulfato de cobre) ≥16 mg/kg, Omega-6 ≥1,4%, Omega-3 ≥0,45%, Metionina ≥0,85%, Lisina ≥1,5%, Taurina ≥0,05%, L-Carnitina ≥50 mg/kg, Betacaroteno ≥10 mg/kg, Clorhidrato de glucosamina ≥400 mg/kg, Sulfato de condroitina ≥250mg/kg.</p>
-					</div>
-					<div class="col-md-4 ftco-animate">
-						<h3 class="h4">Informacion Nutricional</h3>
-						<p>Proteína 25.00%
-                            Grasa 7,00%
-                            Ceniza 7,00%
-                            Fibra 9,00%
-                            Humedad 10,00%
-                            Sodio 0,15%
-                            Calcio 1,10%
-                            Fósforo 0,80%
-
-                            Aditivos nutricionales (por kg).Vitamina A 12.000 UI / kg La vitamina D3 750 UI / kg Vitamina C 100 mg / kg La vitamina E 250 UI / kg Cobre 16 mg / kg Omega-6> 1,40% Omega-3> 0,45% Metionina 0,85% Lisina 1,50% La taurina 0,05% L-carnitina 50 mg / kg Betacaroteno 10 mg / kg Clorhidrato de glucosamina> 400 mg / kg Sulfato de Condroitina> 250mg / kg
-                            Contenido calórico: 3090 kilocalorías por kg.</p>
-					</div>
-
 				</div>
 			</div>
-		</section>
+		</div>
+        </section>
 
+      <script>
+          var objetivo = document.getElementById('nombreAlimento');
+          objetivo.innerHTML = localStorage.getItem("Alimento");
+      </script>
 
+      <script>
+              document.getElementById("resultado").value = localStorage.getItem("Alimento");
 
+      </script>
 
-
-
+    
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -206,9 +200,38 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+
+            <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('oPOFdrnLGZKkICIWu')
+            </script>
+
+            <script>
+                const btn = document.getElementById('button');
+
+                document.getElementById('form')
+                    .addEventListener('submit', function(event) {
+                        event.preventDefault();
+
+                        btn.value = 'Enviando...';
+
+                        const serviceID = 'default_service';
+                        const templateID = 'template_xbu2dxd';
+
+                        emailjs.sendForm(serviceID, templateID, this)
+                            .then(() => {
+                                btn.value = 'Enviar Mensaje';
+                                alert('Mensaje enviado correctamente!');
+                            }, (err) => {
+                                btn.value = 'Enviar mensaje';
+                                alert(JSON.stringify(err));
+                            });
+                    });
+            </script>
+
+
   </body>
 </html>

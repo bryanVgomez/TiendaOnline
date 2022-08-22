@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Send Mail</title>
+
+</head>
+
+<body>
+
+
+<div class="row">
+    <h1>Formulario de contacto con Email JS</h1>
+    <form id="form">
+        <div class="mb-3">
+            <label  for="exampleImputEmail" class="form-label"> Nombre </label>
+            <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label  for="exampleImputPassword1" class="form-label"> Apellidos </label>
+            <input type="text" class="form-control" placeholder="Apellido" name="last" required>
+        </div>
+        <div class="mb-3">
+            <label  for="exampleImputEmail" class="form-label"> Telefono </label>
+            <input type="text" class="form-control" placeholder="Telefono" name="phone" required>
+        </div>
+        <div class="mb-3">
+            <label  for="exampleImputEmail" class="form-label"> Correo electronico </label>
+            <input type="text" class="form-control" placeholder="Email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label  for="exampleImputEmail" class="form-label"> mensaje </label>
+            <input type="text" class="form-control" placeholder="Mensaje" name="message" required>
+        </div>
+        <input type="submit" class="btn btn-success" id="button" value="Enviar Mensaje">
+    </form>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('oPOFdrnLGZKkICIWu')
+    </script>
+
+    <script>
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_xbu2dxd';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Enviar Mensaje';
+                        alert('Mensaje enviado correctamente!');
+                    }, (err) => {
+                        btn.value = 'Enviar mensaje';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
