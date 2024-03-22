@@ -26,7 +26,35 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
+      <style>
+          input {
+              width: 400px;
+              padding: 5px;
 
+          }
+          .redondeado {
+              border-radius: 5px;
+          }
+          .confondo {
+              background-color: #def;
+          }
+          .sinborde {
+              border: 0;
+          }
+          .sinbordefondo {
+              background-color: #eee;
+              border: 0;
+          }
+          .outlinenone {
+              outline: none;
+              background-color: #dfe;
+              border: 0;
+          }
+          .redondeadonorelieve {
+              border-radius: 10px;
+              border: 1px solid #39c;
+          }
+      </style>
 
   </head>
   <body>
@@ -34,7 +62,7 @@
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
             <p>
-                <img src="images/iconoTienda.jpg" align="left" width="180" height="150" onclick="document.location='index.html'">
+                <img src="images/iconoBRIPAU.jpg" align="left" width="180" height="150" onclick="document.location='index.html'">
             </p>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -69,14 +97,13 @@
     </section>
 
 
-
 		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
 			<div class="container-wrap">
 				<div class="row d-flex align-items-stretch no-gutters">
 					<div class="col-md-6 p-5 order-md-last">
 						<form id="form">
                             <div class="form-group">
-                                <input  type="text" class="form-control"  name="alimento" id="resultado" readonly>
+                                <input  type="text" class="redondeadonorelieve"  name="alimento" id="resultado" readonly>
                             </div>
                             <div class="form-group">
                                 <select name="kilos">
@@ -84,21 +111,21 @@
                                     <option value="12 Kilos" >12 Kilos</option>
                                 </select>
                             </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Nombre" name="name" required>
-              </div>
+              <p class=form-group">
+                  <input type="text" class="redondeadonorelieve" placeholder="Nombre" name="name" required>
+              </p>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Apellido" name="last" required>
+                                <input type="text" class="redondeadonorelieve" placeholder="Apellido" name="last" required>
                             </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Telefono" name="phone" required>
-              </div>
-                          <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Email" name="email" required>
-                          </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Direccion" name="address" required>
-                            </div>
+              <p class="form-group">
+                  <input type="text" class="redondeadonorelieve" placeholder="Telefono" name="phone" required>
+              </p>
+                          <p class="form-group">
+                              <input type="text" class="redondeadonorelieve" placeholder="Email" name="email" required>
+                          </p>
+                            <p class="form-group">
+                                <input type="text" class="redondeadonorelieve" placeholder="Direccion" name="address" required>
+                            </p>
               <div class="form-group">
                   <textarea id="" cols="30" rows="7" type="text" class="form-control" placeholder="Mensaje" name="message" required> </textarea>
               </div>
