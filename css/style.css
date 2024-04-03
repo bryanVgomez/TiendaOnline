@@ -9637,7 +9637,7 @@ height: auto;
     max-width: 100%;
     height: auto;
     color:#37535B;
-    background: #ff3300 url(images/llamar.jp) no-repeat center left;
+    background: #ff3300 url(images/banner.jpg) no-repeat center left;
     font-size:100px;
     text-align: center;
     fond-weight:600;
@@ -9655,7 +9655,48 @@ top: 42%; /* sirve en caso de un div como este, donde tiene una altura definida,
 right: 0; /* se debe usar para que margin 0 auto funcione */
 left: 0; /* se debe usar para que margin 0 auto funcione */
   padding: 5px; /* para que la imagen no quede muy ajustada */
-
     }
+
+    .mi-clase {
+    max-width: 100%;
+    height: auto;
+        width:500%;
+        height: 90px;
+        margin:7px auto;
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        padding-left:200px;
+        &:hover {
+        		transform: scale(1.05);
+        		box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.55);
+        	} }
+
+        	.mi-clase img{
+        	 max-width: 100%;
+                height: auto;
+        	   /* Rellenamos el fondo */
+                    min-height: 300%;
+                    min-width: 100%;
+
+                    /* Escalamiento proporcional */
+                    width: 10%;
+                    height: 10%;
+
+
+        	}
+
+
+        	.tienda-banner {
+
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: top center;
+              position: relative;
+              height: 220px; }
+
+
+
 
 
